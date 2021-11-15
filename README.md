@@ -1,13 +1,13 @@
-# Projet Jeu
+# Projet Jeu 🎮
 
 Dans le cadre de la license SPI parcours Informatique de Corte nous devons concevoir un noyeau de jeu d'échecs en Java
 
 
 ## Auteurs
 
-- [@malo2b](https://www.github.com/malo2b)
-- [@focardi-francois-philippe](https://www.github.com/focardi-francois-philippe)
-- [@jeanForconi](https://www.github.com/jeanForconi)
+- ♕ [@malo2b](https://www.github.com/malo2b)
+- ♔ [@focardi-francois-philippe](https://www.github.com/focardi-francois-philippe)
+- ♟︎ [@jeanForconi](https://www.github.com/jeanForconi)
 
 ## Features
 
