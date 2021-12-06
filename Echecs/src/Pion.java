@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 public class Pion extends Piece {
 
     private boolean aBouge;
@@ -12,16 +14,12 @@ public class Pion extends Piece {
      * (Sans tenir compte des autres pièces ou éventuellement Echecs)
      * Tenir compte de la prise d'un pion
      * Tenir compte de la prise en passant (A faire plus tard)
+     * Auteur : @malo2b
     */
     @Override
-    protected String[] calculerDeplacementsPossiblesTheoriques() {
-        String[] deplacements = new String[6]; // 5 déplacements au maximum pour un pion
-        if (couleur == 0) {
-            // deplacements[0] = positionCourante.charAt(1)
-        }
-
-
-        return null;
+    protected ArrayList<String> calculerDeplacementsPossiblesTheoriques() {
+        ArrayList<String> deplacements = new ArrayList<String>(); // 5 déplacements au maximum pour un pion
+        return deplacements;
     }
 
 }

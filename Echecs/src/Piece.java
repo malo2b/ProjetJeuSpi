@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 public abstract class Piece {
 
     /** Couleur : 0 - Blanc | 1 - Noir */
@@ -18,6 +20,6 @@ public abstract class Piece {
         this.couleur = couleur;
     }
 
-    protected abstract String [] calculerDeplacementsPossiblesTheoriques();
+    protected abstract ArrayList<String> calculerDeplacementsPossiblesTheoriques();
 
 }

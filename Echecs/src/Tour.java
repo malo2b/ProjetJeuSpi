@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 public class Tour extends Piece {
 
     protected Tour(int couleur, String positionCourante) {
@@ -5,10 +7,9 @@ public class Tour extends Piece {
     }
 
     @Override
-    protected String[] calculerDeplacementsPossiblesTheoriques() {
-        return null;
-        // TODO Auto-generated method stub
-
+    protected ArrayList<String> calculerDeplacementsPossiblesTheoriques() {
+        ArrayList<String> deplacements = new ArrayList<String>(); // 5 déplacements au maximum pour un pion
+        return deplacements;
     }
 
 }
