@@ -1,11 +1,12 @@
 public class Roi extends Piece {
 
-    protected Roi(int couleur) {
-        super(99, couleur);
+    protected Roi(int couleur, String positionCourante) {
+        super(99, couleur, positionCourante);
     }
 
     @Override
-    protected void calculerDeplacementsPossibles() {
+    protected String[] calculerDeplacementsPossiblesTheoriques() {
+        return null;
         // TODO Auto-generated method stub
 
     }

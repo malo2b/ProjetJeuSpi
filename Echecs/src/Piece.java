@@ -4,6 +4,8 @@ public abstract class Piece {
     protected int couleur;
     /** Nombre de points de la piece */
     protected int points;
+    /** Position courante */
+    protected String positionCourante;
 
     /**
      * Auteur : @malo2b
@@ -11,11 +13,11 @@ public abstract class Piece {
      * @param points
      * @param couleur
      */
-    protected Piece(int points, int couleur) {
+    protected Piece(int points, int couleur, String positionCourante) {
         this.points = points;
         this.couleur = couleur;
     }
 
-    protected abstract void calculerDeplacementsPossibles();
+    protected abstract String [] calculerDeplacementsPossiblesTheoriques();
 
 }

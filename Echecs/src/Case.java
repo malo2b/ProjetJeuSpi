@@ -16,6 +16,11 @@ public class Case {
         colonne = numeroCase / 8;
     }
 
+    /**
+     * Setter Piece
+     * Auteur : @malo2b
+     * @param piece
+     */
     public void positionnerPiece(Piece piece) {
         pPiece = piece;
     }

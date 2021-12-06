@@ -1,11 +1,12 @@
 public class Cavalier extends Piece {
 
-    protected Cavalier(int couleur) {
-        super(3, couleur);
+    protected Cavalier(int couleur, String positionCourante) {
+        super(3, couleur, positionCourante);
     }
 
     @Override
-    protected void calculerDeplacementsPossibles() {
+    protected String[] calculerDeplacementsPossiblesTheoriques() {
+        return null;
         // TODO Auto-generated method stub
 
     }

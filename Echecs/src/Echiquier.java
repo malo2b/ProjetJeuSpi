@@ -21,8 +21,6 @@ public class Echiquier {
             }
         }
         initialiserPieces();
-        int a;
-        a = 2;
     }
 
     /**
@@ -42,31 +40,36 @@ public class Echiquier {
                 tampon = position.split("_");
                 caseCourrante = Cases[getNumeroLigne(tampon[0].charAt(0))][(int)tampon[0].charAt(1)-1-48]; // -48 pour enlever le code ascii du caractere 1
                 switch (tampon[1]) {
+                    // Tour
                     case "T":
                         System.out.println("Tour " + tampon[0] + " | Element du tableau : " + getNumeroLigne(tampon[0].charAt(0)) + " " + (char)((int)tampon[0].charAt(1)-1));
-                        caseCourrante.positionnerPiece(new Tour(cpt > 20 ? 1 : 0));
+                        caseCourrante.positionnerPiece(new Tour(cpt > 20 ? 1 : 0, tampon[0]));
                         break;
+                    // Cavalier
                     case "C":
                         System.out.println("Cavalier" + tampon[0] + " | Element du tableau : " + getNumeroLigne(tampon[0].charAt(0)) + " " + (char)((int)tampon[0].charAt(1)-1));
-                        caseCourrante.positionnerPiece(new Cavalier(cpt > 20 ? 1 : 0));
+                        caseCourrante.positionnerPiece(new Cavalier(cpt > 20 ? 1 : 0, tampon[0]));
                         break;
+                    // Fou
                     case "F":
                         System.out.println("Fou " + tampon[0] + " | Element du tableau : " + getNumeroLigne(tampon[0].charAt(0)) + " " + (char)((int)tampon[0].charAt(1)-1));
-                        caseCourrante.positionnerPiece(new Fou(cpt > 20 ? 1 : 0));
+                        caseCourrante.positionnerPiece(new Fou(cpt > 20 ? 1 : 0, tampon[0]));
                         break;
+                    // Dame
                     case "D":
                         System.out.println("Dame " + tampon[0] + " | Element du tableau : " + getNumeroLigne(tampon[0].charAt(0)) + " " + (char)((int)tampon[0].charAt(1)-1));
-                        caseCourrante.positionnerPiece(new Dame(cpt > 20 ? 1 : 0));
+                        caseCourrante.positionnerPiece(new Dame(cpt > 20 ? 1 : 0, tampon[0]));
                         break;
+                    // Roi
                     case "R":
                         System.out.println("Roi " + tampon[0] + " | Element du tableau : " + getNumeroLigne(tampon[0].charAt(0)) + " " + (char)((int)tampon[0].charAt(1)-1));
-                        caseCourrante.positionnerPiece(new Roi(cpt > 20 ? 1 : 0));
+                        caseCourrante.positionnerPiece(new Roi(cpt > 20 ? 1 : 0, tampon[0]));
                         break;
                 }
             // Si pion
             } else {
                 System.out.println("Pion " + position + " | Element du tableau : " + (char)((int)position.charAt(1)-1) + " " + getNumeroLigne(position.charAt(0)));
-                caseCourrante.positionnerPiece(new Pion(cpt > 20 ? 1 : 0));
+                caseCourrante.positionnerPiece(new Pion(cpt > 20 ? 1 : 0, position));
             }
             cpt++;
         }

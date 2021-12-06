@@ -1,11 +1,12 @@
 public class Fou extends Piece {
 
-    protected Fou(int couleur) {
-        super(3, couleur);
+    protected Fou(int couleur, String positionCourante) {
+        super(3, couleur, positionCourante);
     }
 
     @Override
-    protected void calculerDeplacementsPossibles() {
+    protected String[] calculerDeplacementsPossiblesTheoriques() {
+        return null;
         // TODO Auto-generated method stub
 
     }
