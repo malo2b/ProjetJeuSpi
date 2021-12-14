@@ -1,6 +1,6 @@
 # Projet Jeu 🎮
 
-Dans le cadre de la license SPI parcours Informatique de Corte nous devons concevoir un noyeau de jeu d'échecs en Java
+Dans le cadre de la license SPI parcours Informatique de Corte nous sommes chargés concevoir un noyeau de jeu d'échecs en Java
 
 
 ## Auteurs
